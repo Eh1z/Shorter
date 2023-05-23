@@ -104,7 +104,7 @@
 }
 
 .copy_btn {
-  @apply w-7 h-7 rounded-full bg-purple-700 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur flex justify-center items-center cursor-pointer;
+  @apply w-7 h-7 rounded-full bg-purple-300 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur flex justify-center items-center cursor-pointer;
 }
 
 .blue_gradient {
