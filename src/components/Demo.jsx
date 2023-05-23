@@ -1,15 +1,32 @@
 import React, { useState, useEffect} from 'react';
 import { copy, linkIcon, loader, tick } from '../assets';
+import { useLazyGetSummaryQuery } from '../services/article';
 
 const Demo = () => {
 
   const [article, setArticle] = useState({
     url:'',
-    summary:''
+    summary:'',
   });
 
+  const [getSummary, { error, isFetching }] = useLazyGetSummaryQuery();
+
+  const [allArticles, setAllArticles] = useState([]);
+
   const handleSubmit = async (e) => {
-    alert('Link Submitted');
+    e.preventDefault();
+    //alert('Link Submitted');
+    const {data} = await getSummary({ articleUrl: article.url});
+
+    if (data?.summary) {
+      const newArticle = { ...article, summary: data.summary };
+      const updatedAllArticles= [newArticle, ...allArticles]
+
+      setArticle(newArticle);
+      setAllArticles(updatedAllArticles);
+      console.log(newArticle);
+    }
+
   }
   return (
     <section className='mt-16 w-full max-w-xl'>
