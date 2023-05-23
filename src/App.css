@@ -58,9 +58,9 @@
   content: "";
   width: 100%;
   height: 100%;
-  filter: blur(100px) saturate(150%);
+  filter: blur(200px) saturate(150%);
   top: 80px;
-  opacity: 0.15;
+  opacity: .5;
 }
 
 @media screen and (max-width: 640px) {
@@ -76,15 +76,15 @@
 }
 
 .black_btn {
-  @apply rounded-full border border-black bg-black py-1.5 px-5 text-sm text-white transition-all hover:bg-white hover:text-black;
+  @apply rounded-full border border-purple-700 bg-purple-700 py-1.5 px-5 text-sm text-white transition-all hover:bg-white hover:text-purple-700;
 }
 
 .head_text {
   @apply mt-5 text-5xl font-extrabold leading-[1.15] text-black sm:text-6xl text-center;
 }
 
-.orange_gradient {
-  @apply bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent;
+.purple_gradient {
+  @apply bg-gradient-to-r from-blue-500 via-purple-600 to-cyan-500 bg-clip-text text-transparent;
 }
 
 .desc {
@@ -92,11 +92,11 @@
 }
 
 .url_input {
-  @apply block w-full rounded-md border border-gray-200 bg-white py-2.5 pl-10 pr-12 text-sm shadow-lg font-satoshi font-medium focus:border-black focus:outline-none focus:ring-0;
+  @apply block w-full rounded-md border border-gray-200 bg-white py-2.5 pl-10 pr-12 text-sm shadow-lg font-satoshi font-medium focus:border-purple-700 focus:outline-none focus:ring-0;
 }
 
 .submit_btn {
-  @apply hover:border-gray-700 hover:text-gray-700 absolute inset-y-0 right-0 my-1.5 mr-1.5 flex w-10 items-center justify-center rounded border border-gray-200 font-sans text-sm font-medium text-gray-400;
+  @apply hover:border-purple-700 hover:text-purple-700 absolute inset-y-0 right-0 my-1.5 mr-1.5 flex w-10 items-center justify-center rounded border border-purple-200 font-sans text-sm font-medium text-purple-400;
 }
 
 .link_card {
@@ -104,7 +104,7 @@
 }
 
 .copy_btn {
-  @apply w-7 h-7 rounded-full bg-white/10 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur flex justify-center items-center cursor-pointer;
+  @apply w-7 h-7 rounded-full bg-purple-700 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur flex justify-center items-center cursor-pointer;
 }
 
 .blue_gradient {
