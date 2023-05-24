@@ -20,7 +20,9 @@ const Demo = () => {
 
   const [getSummary, { error, isFetching }] = useLazyGetSummaryQuery();
   const [allArticles, setAllArticles] = useState([]);
+  const [copied, setCopied] = useState("");
 
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     //alert('Link Submitted');
@@ -38,6 +40,13 @@ const Demo = () => {
     }
 
   }
+
+  const handleCopy = (copyLink) => {
+    setCopied(copyLink);
+    navigator.clipboard.writeText(copyLink);
+    setTimeout(() => setCopied(false), 2000);
+  }
+
   return (
     <section className='mt-16 w-full max-w-xl'>
       {/*Search Bar*/}
@@ -69,8 +78,9 @@ const Demo = () => {
               onClick={() => setArticle(item)}
               className='link_card'
              >
-              <div className='copy_btn'>
-                <img src={copy} alt="copy_button"
+              <div className='copy_btn' 
+              onClick={() => handleCopy(item.url)}>
+                <img src={copied === item.url ? tick : copy} alt="copy_button"
                 className='w-[40%] h-[40%] object-contain' />
               </div>
               <p className='flex-1 font-satoshi blue_gradient font-medium text-sm truncate'>
@@ -99,12 +109,14 @@ const Demo = () => {
                 ): (
                   article.summary && (
                     <div className='flex flex-col gap-3 justify-center items-center'>
-                      <h1 className='font-satoshi font-bold purple_gradient text-xl'>Summarized 
+                      <h1 className='font-satoshi font-bold purple_gradient text-2xl'>Summarized 
                         <span> Article</span>
                       </h1>
 
                       <div className='summary_box w-full'>
-                        <p>{article.summary}</p>
+                        <p className='font-inter text-sm font-medium text-gray-700'>
+                          {article.summary}
+                        </p>
                       </div>
                     </div>
                   )
