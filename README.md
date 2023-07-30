@@ -6,7 +6,7 @@ Shorter is an innovative AI-powered article summary tool that utilizes the power
 https://shortter.netlify.app/
 
 
-<img src="https://github.com/Eh1z/Shorter/assets/111048723/4912cb69-6744-4292-abba-609c7dfe2247" alt="Shorter by Godsent Ehiz" width="100" height="100">
+<img src="https://github.com/Eh1z/Shorter/assets/111048723/4912cb69-6744-4292-abba-609c7dfe2247" alt="Shorter by Godsent Ehiz" width="800" height="600">
 
 
 
