@@ -2,7 +2,7 @@
 
 Shorter is an innovative AI-powered article summary tool that utilizes the power of GPT-4 to provide concise and accurate summaries of articles. With Shorter, you can simply input an article link, and the tool will automatically scrape the target URL for the article content and generate a summarized version, saving you time and effort in reading lengthy articles.
 
-https://shortter.netlify.app/ 
+https://shortter.netlify.app/
 
 
 
