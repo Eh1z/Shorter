@@ -18,7 +18,7 @@ https://shortter.netlify.app/
 
 - **Local History Storage:** The app utilizes Redux states to keep track of your recent summaries on your local device, enabling easy access and review of previous summarizations.
 
-## How to Use
+## How to Use:
 
 1. **Input Article Link:** On the Shorter website, paste the URL of the article you want to summarize into the provided input field.
 
