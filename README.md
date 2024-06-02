@@ -9,7 +9,6 @@ https://shortter.netlify.app/
 <img src="https://github.com/Eh1z/Shorter/assets/111048723/4912cb69-6744-4292-abba-609c7dfe2247" alt="Shorter by Godsent Ehiz">
 
 
-
 ## Features
 
 - **AI Article Summarization:** Shorter uses the advanced capabilities of GPT-4 to intelligently summarize articles and deliver key insights in a condensed format.
